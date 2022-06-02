@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Roboto_Medium" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">font/roboto_medium.ttf</item>
+    </style>
+
+    <style name="Lato_Regular" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">font/lato_regular.ttf</item>
+    </style>
+
+    <style name="deskripsi" parent="Lato_Regular">
+        <item name="android:textColor">@color/font1</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="deskripsi1" parent="Roboto_Medium">
+        <item name="android:textColor">@color/font1</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="deskripsi2" parent="Roboto_Medium">
+        <item name="android:textColor">@color/font2</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+</resources>

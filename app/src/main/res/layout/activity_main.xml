@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="16.03dp"
+            android:layout_height="19.5dp"
+            android:src="@drawable/panah"
+            android:layout_marginTop="24.73dp"
+            android:layout_marginLeft="18.26dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Form Pengisian Data"
+            style="@style/deskripsi"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="35.98dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="16dp">
+
+            <ImageView
+                android:layout_width="328dp"
+                android:layout_height="94dp"
+                android:src="@drawable/kotak"/>
+
+            <TextView
+                android:id="@+id/font1"
+                style="@style/deskripsi2"
+                android:textStyle="bold"
+                android:layout_width="22dp"
+                android:layout_height="14dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Info"
+                android:textColor="@color/font1" />
+
+            <TextView
+                android:layout_width="296dp"
+                android:layout_height="36dp"
+                android:layout_below="@+id/font1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:text="Form berikut ini bertujuan untuk memberikan informasi kepada pusat agar dapat mudah dilaporkan"
+                style="@style/deskripsi2" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jenis Tes"
+            style="@style/deskripsi1"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"/>
+        <RadioGroup
+            android:id="@+id/tes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/antigen"
+                android:layout_width="127dp"
+                android:layout_height="24dp"
+                android:text="Rapid Antigen"
+                android:paddingLeft="16dp"
+                style="@style/deskripsi1"
+                android:layout_marginLeft="16dp"/>
+            <RadioButton
+                android:id="@+id/pcr"
+                android:layout_width="127dp"
+                android:layout_height="24dp"
+                android:paddingLeft="16dp"
+                android:text="PCR"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                style="@style/deskripsi1"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tanggal Terkonfirmasi"
+            style="@style/deskripsi1"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:id="@+id/border"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/border" />
+            <TextView
+                android:id="@+id/tanggal"
+                android:layout_width="287dp"
+                android:layout_height="16dp"
+                android:text="Pilih Tanggal"
+                style="@style/deskripsi2"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="12dp"/>
+
+            <ImageView
+                android:layout_width="13.5dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="12.5dp"
+                android:layout_marginRight="14.25dp"
+                android:layout_toRightOf="@+id/tanggal"
+                android:src="@drawable/kalender"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NIK"
+            style="@style/deskripsi1"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"/>
+
+        <EditText
+            android:id="@+id/edit_nik"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Masukkan NIK"
+            style="@style/deskripsi2"
+            android:paddingLeft="12dp"
+            android:background="@drawable/border"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            style="@style/deskripsi1"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"/>
+
+        <EditText
+            android:id="@+id/edit_nama"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Masukkan Nama"
+            style="@style/deskripsi2"
+            android:paddingLeft="12dp"
+            android:background="@drawable/border"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tanggal Lahir"
+            style="@style/deskripsi1"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/border" />
+            <TextView
+                android:id="@+id/tanggal1"
+                android:layout_width="287dp"
+                android:layout_height="16dp"
+                android:text="Pilih Tanggal"
+                style="@style/deskripsi2"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="12dp"/>
+
+            <ImageView
+                android:layout_width="13.5dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="12.5dp"
+                android:layout_marginRight="14.25dp"
+                android:layout_toRightOf="@+id/tanggal1"
+                android:src="@drawable/kalender"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin"
+            style="@style/deskripsi1"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"/>
+        <RadioGroup
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="127dp"
+                android:layout_height="24dp"
+                android:text="laki-Laki"
+                android:paddingLeft="16dp"
+                style="@style/deskripsi1"
+                android:layout_marginLeft="16dp"/>
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="127dp"
+                android:layout_height="24dp"
+                android:paddingLeft="16dp"
+                android:text="Perempuan"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                style="@style/deskripsi1"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hubungan Dengan Anda"
+            style="@style/deskripsi1"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"/>
+        <RadioGroup
+            android:id="@+id/hubungan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/ortu"
+                android:layout_width="127dp"
+                android:layout_height="24dp"
+                android:text="Orang Tua"
+                android:paddingLeft="16dp"
+                style="@style/deskripsi1"
+                android:layout_marginLeft="16dp"/>
+            <RadioButton
+                android:id="@+id/sp"
+                android:layout_width="127dp"
+                android:layout_height="24dp"
+                android:paddingLeft="16dp"
+                android:text="Suami/Istri"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                style="@style/deskripsi1"/>
+            <RadioButton
+                android:id="@+id/anak"
+                android:layout_width="127dp"
+                android:layout_height="24dp"
+                android:paddingLeft="16dp"
+                android:text="Anak"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                style="@style/deskripsi1"/>
+            <RadioButton
+                android:id="@+id/kerabat"
+                android:layout_width="140dp"
+                android:layout_height="24dp"
+                android:paddingLeft="16dp"
+                android:text="Kerabat Lainnya"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                style="@style/deskripsi1"/>
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+            <CheckBox
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dengan ini saya menyetujui bahwa data yang saya isikan adalah benar"
+                android:layout_marginLeft="16dp"
+                style="@style/deskripsi2"/>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_lanjut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Btn1"
+            android:text="Selanjutnya"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="32dp"/>
+    </LinearLayout>
+</ScrollView>
